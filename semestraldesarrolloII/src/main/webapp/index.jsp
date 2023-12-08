@@ -9,7 +9,7 @@
 <body>
 	<h1>INICIO SESIÓN</h1>
 	<div class="contenerdor-sesion">
-		<form action=LoginControlador method=post>
+		<form action="controladores/LogController.jsp" method="post">
 			<div class="contenedor-inputs">
 				<input type="text" name="email" class="input-email" placeholder="email" required>
 				<input type="password" name="pass" class="input-pass" placeholder="Password" required>
@@ -18,7 +18,7 @@
 			</div>
 		</form>
          <br>
-        ¿No tienes una cuenta?<a href="registro.jsp">Registrarse</a> 
+        ¿No tienes una cuenta?<a href="principal/registro.jsp">Registrarse</a> 
        </div>
 
 </body>

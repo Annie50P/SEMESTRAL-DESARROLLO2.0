@@ -7,10 +7,7 @@
 </head>
 <body>
     <h1>Formulario de registro</h1>
-    
-    
-    
-    <form action="RegistroControlador" method="post">
+    <form action="../controladores/RegistroController.jsp" method="post">
         <div class="contenedor-inputs">
             <label>Nombre</label>
             <input type="text" name="nombre" class="input-nombre" placeholder="Nombre" required><br>

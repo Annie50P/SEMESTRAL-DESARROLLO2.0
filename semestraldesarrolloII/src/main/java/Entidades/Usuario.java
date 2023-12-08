@@ -4,9 +4,6 @@ public class Usuario {
 	private int idUsuario;
 	private String nombre, apellido, email, pass, fechaNac, pais, cedula;
 	
-    private String errorNombre;
-    private String errorApellido;
-	
 	public Usuario() {
 		
 	}
@@ -70,18 +67,7 @@ public class Usuario {
 	public void setCedula(String cedula) {
 		this.cedula = cedula;
 	}
-	public String getErrorNombre() {
-		return errorNombre;
-	}
-	public void setErrorNombre(String errorNombre) {
-		this.errorNombre = errorNombre;
-	}
-	public String getErrorApellido() {
-		return errorApellido;
-	}
-	public void setErrorApellido(String errorApellido) {
-		this.errorApellido = errorApellido;
-	}
+	
 	
 	
 }
