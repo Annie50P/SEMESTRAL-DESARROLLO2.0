@@ -17,7 +17,6 @@
             
             <label>Email</label>
             <input type="email" name="email" class="input-email" placeholder="Email" required><br>
-            
             <label>Password</label>
             <input type="password" name="pass" class="input-contrasena" placeholder="Contraseña" required><br>
             

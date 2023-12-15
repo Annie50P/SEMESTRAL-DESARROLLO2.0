@@ -27,7 +27,8 @@ java.util.List"
 	    user.setFechaNac(fechaNacimiento);
 	    user.setPais(pais);
 	    user.setCedula(cedula);
-	
+	     
+	    
 	    try {
 	        rspta = lg.registrarUsuario(user);
 	    } catch (Exception ex) {

@@ -3,13 +3,15 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Inicio</title>
+    <title>Reservar vuelo</title>
+    <style>
+         
+    </style>
 </head>
 <body>
 <%@ page import="DAO.PaisDAO, Entidades.Aeropuerto" %>
 <%@ page import="java.util.List, java.util.ArrayList" %>
 
-    <h4>HAS INICIADO SESIÓN</h4>
     <div>
         <label>ORIGEN</label>
         <select class="form-origen">
@@ -38,6 +40,9 @@
                }
             %>
         </select>
+        
+        <label>FECHA IDA</label><input type="date" name="fechaSalida" class="form-fecha-salida">
+        
     </div>
 </body>
 </html>

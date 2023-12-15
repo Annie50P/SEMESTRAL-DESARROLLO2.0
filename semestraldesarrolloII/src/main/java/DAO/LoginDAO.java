@@ -30,6 +30,7 @@ public class LoginDAO {
 	    
 	    return rspta;
 	}
+	
 	public int registrarUsuario(Usuario usuario) throws Exception {
         int respuesta = 0;
 
@@ -58,7 +59,6 @@ public class LoginDAO {
         
         return respuesta;
     }
-    
 }
 	
 

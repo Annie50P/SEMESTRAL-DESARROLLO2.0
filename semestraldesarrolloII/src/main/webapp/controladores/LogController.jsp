@@ -24,7 +24,7 @@ java.util.List"
            }
 
            if (rspta != 0) {
-               response.sendRedirect("../principal/inicio.jsp");
+               response.sendRedirect("../principal/decide.jsp");
            } else {
                response.sendRedirect("../index.jsp?rspta=" + rspta);
            }

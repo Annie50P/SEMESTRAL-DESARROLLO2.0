@@ -3,7 +3,7 @@ java.sql.SQLException,
 java.util.List, java.util.ArrayList"
 %>
 <%@ page import= "DAO.PaisDAO,
- Entidades.Aeropuerto"
+ Entidades.Aeropuerto, Entidades.Vuelo"
 %>
 <%
         Aeropuerto aer = new Aeropuerto();
@@ -12,12 +12,16 @@ java.util.List, java.util.ArrayList"
         List<Aeropuerto> aeropuertos = pa.obtenerAeropuertos();
         request.setAttribute("aeropuertos", aeropuertos);
         
+        
+        Aeropuerto origenSeleccionado = (Aeropuerto) request.getAttribute("origenSeleccionado");
+        Aeropuerto destinoSeleccionado = (Aeropuerto) request.getAttribute("destinoSeleccionado");
+        
         if ("btn-enviar".equals(request.getParameter("action"))) {
             String pais = request.getParameter("pais");
             String codigoIata = request.getParameter("codigoIata");
             aer.setPais(pais);
             aer.setCodigoIata(codigoIata);
-  
+          
              try {
                 aeropuertos = pa.obtenerAeropuertos();
                 request.setAttribute("aeropuertos", aeropuertos);
@@ -28,6 +32,7 @@ java.util.List, java.util.ArrayList"
             if (aeropuertos != null && !aeropuertos.isEmpty()) {
                 RequestDispatcher dispatcher = request.getRequestDispatcher("/semestraldesarrolloII/inicio.jsp");
                 dispatcher.forward(request, response);
+                
             } else {
                 response.sendRedirect("/semestraldesarrolloII/index.jsp?rspta=0"+aeropuertos);
             }
